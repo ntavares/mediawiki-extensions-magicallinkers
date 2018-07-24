@@ -10,7 +10,7 @@ This extension is nothing but the extension.json wrapping of the simple submitte
 How to use
 ==========
 Besides normal extension insertion, you'll probably want to extend it with your own keywords. Example:
-```
+```php
 wfLoadExtension( 'MagicalLinkers' );
 class MagicalLinkersExt {
 	public static function linkBug( $text ) {
