@@ -1,7 +1,7 @@
 # mediawiki-extensions-magicallinkers
 
 The MagicalLinkers extension provides dynamic linking of inline keywords, such as [magic links](https://www.mediawiki.org/wiki/Help:Magic_links). 
-Following the dicussion around the the [future of magic links](https://www.mediawiki.org/wiki/Requests_for_comment/Future_of_magic_links) (more specifically, its removal from mediawiki core), 'wsd' (untraced) 
+Following the discussion around the the [future of magic links](https://www.mediawiki.org/wiki/Requests_for_comment/Future_of_magic_links) (more specifically, its removal from mediawiki core), 'wsd' (untraced) 
 submitted a [patch](https://phabricator.wikimedia.org/T28207#294990) to demonstrate how magiclinks could be turned into an extension. 
 In the meantime, [$wgEnableMagicLinks](https://www.mediawiki.org/wiki/Manual:$wgEnableMagicLinks) was introduced to aid in phasing these out, but the possibility of extending the list was not there.
 
