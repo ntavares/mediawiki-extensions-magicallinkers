@@ -1,6 +1,6 @@
 <?php
 #
-# Disclaimer: Following the dicussion around the the future of magic links[1]
+# Disclaimer: Following the discussion around the the future of magic links[1]
 # (more specifically, its removal from mediawiki core), 'wsd' (untraced) 
 # submitted a patch[2] to demonstrate how magiclinks could be turned into an extension.
 # In the meantime, $wgEnableMagicLinks[3] was introduced to aid in phasing these out.
@@ -24,7 +24,7 @@ if ( function_exists( 'wfLoadExtension' ) ) {
 	); */
 	return true;
 } else {
-	die( 'This version of the SphinxSearch extension requires MediaWiki 1.25+' );
+	die( 'The MagicalLinkers extension requires MediaWiki 1.25+' );
 }
 
 
@@ -145,7 +145,7 @@ class MagicalLinkers {
 			return;
 		}
 
-        # enforce disabling of mediawiki-core' logic for magiclinks,
+        # enforce disabling of mediawiki-core's logic for magiclinks,
         # we will take care of these from now one.
         $wgEnableMagicLinks = [ 
             'ISBN' => false, 
@@ -165,7 +165,7 @@ class MagicalLinkers {
             'pattern' => '<.*?>'
         );
 
-        // we one the user-extended ones to show at the bottom
+        // we want the user-extended ones to show at the bottom
         if( $wgMagicalClassic ) {
 			$_wgMagicalLinkers[] = array(
 				'linker' => 'MagicalLinkers::linkISBN',
